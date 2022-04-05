@@ -273,6 +273,7 @@ async function load(notebook, targets = [], config = {}) {
     }
   );
 
+  await page.goto('file:///dev/null')
   await page.setContent(htmlPage, { waitUntil: "load" });
 
   await page.waitForFunction(() => window.run);
