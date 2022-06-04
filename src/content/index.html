@@ -108,9 +108,12 @@
       else {
         observer = Inspector.into(document.body);
       }
+      /*
       const notebookLink = `https://api.observablehq.com/${notebook}.js?v=3${
         OBSERVABLEHQ_API_KEY ? `&api_key=${OBSERVABLEHQ_API_KEY}` : ""
       }`;
+      */
+      const notebookLink = `http://localhost:3000/notebooks/${notebook}/index.js`;
 
       return import(notebookLink)
         .then(async ({ default: define }) => {

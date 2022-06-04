@@ -1,5 +1,5 @@
 {
-  "name": "@jimpick/observable-prerender",
+  "name": "@jimpick/observable-prerender-localhost",
   "version": "0.4.3-1",
   "description": "Pre-render and programmatically control Observable notebooks with Puppeteer!",
   "main": "src/index.js",
